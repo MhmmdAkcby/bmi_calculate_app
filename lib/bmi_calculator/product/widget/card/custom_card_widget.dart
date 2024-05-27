@@ -78,7 +78,7 @@ TextStyle? textStyle(BuildContext context, color, size) {
 
 class _WidgetSizes {
   final double sizedBoxWidth = 0.5;
-  final double sizedBoxHeight = 0.3;
+  final double sizedBoxHeight = 0.28;
   final double textNameSize = 25;
   final double textNumberSize = 60;
 }

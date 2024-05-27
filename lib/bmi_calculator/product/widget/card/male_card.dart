@@ -18,9 +18,7 @@ class MaleCard extends StatelessWidget {
 }
 
 class _MaleCard extends StatefulWidget {
-  const _MaleCard({
-    super.key,
-  });
+  const _MaleCard({super.key});
 
   @override
   State<_MaleCard> createState() => _MaleCardState();
@@ -32,7 +30,7 @@ class _MaleCardState extends State<_MaleCard> {
     return InkWell(
       onTap: () {},
       child: Card(
-        color: ProjectColors.spaceExplorer,
+        color: ProjectColors.blueRegal,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

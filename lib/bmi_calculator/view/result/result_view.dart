@@ -1,7 +1,7 @@
 import 'package:bmi_calculator/bmi_calculator/product/color/project_color.dart';
 import 'package:bmi_calculator/bmi_calculator/product/global/navigator.dart';
 import 'package:bmi_calculator/bmi_calculator/product/language/language_item.dart';
-import 'package:bmi_calculator/bmi_calculator/product/widget/button/button_widget.dart';
+import 'package:bmi_calculator/bmi_calculator/product/widget/button/custom_button_widget.dart';
 import 'package:bmi_calculator/bmi_calculator/product/widget/text/text_widget.dart';
 import 'package:bmi_calculator/bmi_calculator/view/home/home_view.dart';
 import 'package:flutter/material.dart';
@@ -40,7 +40,9 @@ class _ResultViewState extends State<ResultView> {
           ),
           SizedBox(height: _WidgteSize().sizedBoxHeight),
           _ContentContainer(widget: widget),
-          const _ReCalculateButton(),
+          const Expanded(
+            child: _ReCalculateButton(),
+          ),
         ],
       ),
     );

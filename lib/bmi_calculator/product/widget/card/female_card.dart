@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 class FemaleCard extends StatelessWidget {
   const FemaleCard({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -21,7 +20,6 @@ class _FemaleCard extends StatefulWidget {
   const _FemaleCard({
     super.key,
   });
-
   @override
   State<_FemaleCard> createState() => _FemaleCardState();
 }
