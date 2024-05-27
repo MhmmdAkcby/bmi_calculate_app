@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       child: Consumer<ThemeNotifer>(
         builder: (context, themeNotifier, child) {
           return MaterialApp(
+            debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             theme: themeNotifier.currentTheme,
             home: const HomeView(),

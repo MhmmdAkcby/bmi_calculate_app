@@ -1,5 +1,7 @@
 import 'dart:math';
 
+import 'package:bmi_calculator/bmi_calculator/product/language/language_item.dart';
+
 class Calculate {
   Calculate({required this.height, required this.weight});
   final double height;
@@ -13,21 +15,21 @@ class Calculate {
 
   String getResult() {
     if (_bmi >= 25) {
-      return 'Overweight';
+      return LanguageItems.overweight.languageString();
     } else if (_bmi > 18.5) {
-      return 'Normal';
+      return LanguageItems.normal.languageString();
     } else {
-      return 'Underweight';
+      return LanguageItems.underweight.languageString();
     }
   }
 
   String getInterpretation() {
     if (_bmi >= 25) {
-      return 'You have a heigher than nomal body weight. Try to exercise more';
+      return LanguageItems.overweightText.languageString();
     } else if (_bmi > 18.5) {
-      return 'You have a normal body weight. Good job!';
+      return LanguageItems.normalText.languageString();
     } else {
-      return 'You have a lower than normal body weight. You can eat a bit more';
+      return LanguageItems.underweightText.languageString();
     }
   }
 }

@@ -9,6 +9,12 @@ enum LanguageItems {
   cm,
   reCalculate,
   yourResult,
+  overweight,
+  normal,
+  underweight,
+  overweightText,
+  normalText,
+  underweightText,
 }
 
 extension LanguageItemExtension on LanguageItems {
@@ -34,6 +40,18 @@ extension LanguageItemExtension on LanguageItems {
         return 'RE-CALCULATE';
       case LanguageItems.yourResult:
         return 'Your Result';
+      case LanguageItems.overweight:
+        return 'Overweight';
+      case LanguageItems.normal:
+        return 'Normal';
+      case LanguageItems.underweight:
+        return 'Underweight';
+      case LanguageItems.overweightText:
+        return 'You have a heigher than nomal body weight. Try to exercise more.';
+      case LanguageItems.normalText:
+        return 'You have a normal body weight. Good job!';
+      case LanguageItems.underweightText:
+        return 'You have a lower than normal body weight. You can eat a bit more.';
     }
   }
 }
