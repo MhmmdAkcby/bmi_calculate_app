@@ -1,3 +1,6 @@
+import 'package:bmi_calculator/bmi_calculator/constant/duration_items.dart';
+import 'package:bmi_calculator/bmi_calculator/constant/lottie_items.dart';
+import 'package:bmi_calculator/bmi_calculator/product/global/theme_notifer.dart';
 import 'package:bmi_calculator/bmi_calculator/product/language/language_item.dart';
 import 'package:bmi_calculator/bmi_calculator/product/widget/button/calculate_button.dart';
 import 'package:bmi_calculator/bmi_calculator/product/widget/card/age_card.dart';
@@ -6,6 +9,8 @@ import 'package:bmi_calculator/bmi_calculator/product/widget/card/weight_card.da
 import 'package:bmi_calculator/bmi_calculator/product/widget/card/male_card.dart';
 import 'package:bmi_calculator/bmi_calculator/product/widget/slider/slider.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
+import 'package:provider/provider.dart';
 
 part 'partof_appbar.dart';
 

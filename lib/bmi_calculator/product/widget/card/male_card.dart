@@ -30,7 +30,7 @@ class _MaleCardState extends State<_MaleCard> {
     return InkWell(
       onTap: () {},
       child: Card(
-        color: ProjectColors.blueRegal,
+        color: ProjectColors.spaceExplorer,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

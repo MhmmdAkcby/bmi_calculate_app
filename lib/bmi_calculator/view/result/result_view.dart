@@ -1,10 +1,12 @@
 import 'package:bmi_calculator/bmi_calculator/product/color/project_color.dart';
 import 'package:bmi_calculator/bmi_calculator/product/global/navigator.dart';
+import 'package:bmi_calculator/bmi_calculator/product/global/theme_notifer.dart';
 import 'package:bmi_calculator/bmi_calculator/product/language/language_item.dart';
 import 'package:bmi_calculator/bmi_calculator/product/widget/button/custom_button_widget.dart';
 import 'package:bmi_calculator/bmi_calculator/product/widget/text/text_widget.dart';
 import 'package:bmi_calculator/bmi_calculator/view/home/home_view.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class ResultView extends StatefulWidget {
   const ResultView(
@@ -35,7 +37,7 @@ class _ResultViewState extends State<ResultView> {
         children: [
           TextWidget(
             text: LanguageItems.yourResult.languageString(),
-            color: Colors.black,
+            color: context.watch<ThemeNotifer>().isLightTheme ? ProjectColors.whiteColor : ProjectColors.darkColor,
             fontSize: _WidgteSize().yourResultTextFontSize,
           ),
           SizedBox(height: _WidgteSize().sizedBoxHeight),
